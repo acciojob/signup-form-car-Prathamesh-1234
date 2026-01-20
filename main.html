@@ -1,49 +1,61 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-		<form method='post'>
-		<label for='name'>Name</label>
-		<input id='name' type='text' required placeholder='Name'>
-		<br>
-		<label for='email'>Email</label>
-		<input id='email' type='email' required placeholder='email'>
-		<br>
-		<label for='gender'>Male</label>
-		<input id='gender' type='radio' required name='gender' value='gender_m'>
-		<br>
-		<label for='gender'>Female</label>
-		<input id='gender' type='radio' required name='gender' value='gender_f'>
-		<br>
-		<label for='cars'>Car Brands</label>
-		<Select id='cars' type='text' required placeholder='--Please choose an option-'>
-		<br>
-		<label for='age'>Age</label>
-		<input id='age' type='Number' name='age' required placeholder='Age'>
-		<br>
-		<label for='dob'>DOB</label>
-		<input id='dob' type='Date' required >
-		<br>
-		<label for='tel'>Phone Number</label>
-		<input id='tel' type='Tel' required placeholder='xxx-xxx-xxxx'>
-		<br>
-		<label for='password'>Password</label>
-		<input id='password' type='password' required placeholder='Password'>
-		<br>
-		<label for='tos'>I agree to the TOS</label>
-		<input id='tos' type='Checkbox' required >
-		<button type='submit'>Submit</button>
-	</form>
-		
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <form method="post">
+
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required placeholder="Name">
+    <br>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required placeholder="Email">
+    <br>
+
+    <label>Gender</label><br>
+    <label for="gender_m">Male</label>
+    <input id="gender_m" type="radio" name="gender" value="male" required>
+
+    <label for="gender_f">Female</label>
+    <input id="gender_f" type="radio" name="gender" value="female" required>
+    <br>
+
+    <label for="cars">Car Brands</label>
+    <select id="cars" name="cars" required>
+      <option value="">--Please choose an option--</option>
+      <option value="bmw">BMW</option>
+      <option value="audi">Audi</option>
+      <option value="tesla">Tesla</option>
+    </select>
+    <br>
+
+    <label for="age">Age</label>
+    <input id="age" name="age" type="number" required placeholder="Age">
+    <br>
+
+    <label for="dob">DOB</label>
+    <input id="dob" name="dob" type="date" required>
+    <br>
+
+    <label for="tel">Phone Number</label>
+    <input id="tel" name="tel" type="tel" required placeholder="xxx-xxx-xxxx">
+    <br>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" required placeholder="Password">
+    <br>
+
+    <label for="tos">I agree to the TOS</label>
+    <input id="tos" name="tos" type="checkbox" required>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="./script.js"></script>
 </body>
-
 </html>
